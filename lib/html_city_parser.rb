@@ -4,7 +4,6 @@ class HtmlCityParser
   CITY_HTML_URL = 'http://www.latlong.net/category/cities-102-15.html'.freeze
   attr_reader :cities
   def initialize 
-    puts "dsd"
     @url = CITY_HTML_URL
     @cities = []
   end
@@ -44,7 +43,7 @@ class HtmlCityParser
   def city_hash(data)
     city, state, country = data.split(',').map(&:strip)
     {
-      city: city,
+      name: city,
       state: state,
       country: country
     }
