@@ -4,7 +4,6 @@ class HtmlCityParser
   CITY_HTML_URL = 'http://www.latlong.net/category/cities-102-15.html'.freeze
   attr_reader :cities
   def initialize 
-    @url = CITY_HTML_URL
     @cities = []
   end
 
